@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { PipesModule } from '../pipes/pipes.module';
+import { ModalUploadsComponent } from '../components/modal-uploads/modal-uploads.component';
 
 
 
@@ -17,6 +18,7 @@ import { PipesModule } from '../pipes/pipes.module';
         PipesModule
     ],
     declarations: [
+        ModalUploadsComponent,
         NopagefoundComponent,
         BreadcrumbsComponent,
         HeaderComponent,
@@ -26,7 +28,8 @@ import { PipesModule } from '../pipes/pipes.module';
         NopagefoundComponent,
         BreadcrumbsComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadsComponent
     ]
 })
 export class SharedModule {

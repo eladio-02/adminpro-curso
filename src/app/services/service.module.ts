@@ -9,7 +9,7 @@ import { SettingsService,
          UsuarioService,
          LoginGuardGuard,
          SubirArchivoService,
-         MedicoService, AdminGuard } from './service.index';
+         MedicoService, AdminGuard, VerificaTokenGuard } from './service.index';
 import { ModalUploadService } from '../components/modal-uploads/modal-upload.service';
 
 @NgModule({
@@ -28,7 +28,8 @@ import { ModalUploadService } from '../components/modal-uploads/modal-upload.ser
     SubirArchivoService,
     ModalUploadService,
     HospitalService,
-    MedicoService
+    MedicoService,
+    VerificaTokenGuard
   ]
 })
 export class ServiceModule { }
